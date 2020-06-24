@@ -56,10 +56,6 @@ class DemoJFileChooser extends JPanel
 	    chooser.setAcceptAllFileFilterUsed(true);
 	    //    
 	    if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) { 
-	      System.out.println("getCurrentDirectory(): " 
-	         +  chooser.getCurrentDirectory());
-	      System.out.println("getSelectedFile() : " 
-	         +  chooser.getSelectedFile());
 	      label.setText(chooser.getSelectedFile().toString()+" file selected");
 			go2.setVisible(true);
 			go3.setVisible(true);
